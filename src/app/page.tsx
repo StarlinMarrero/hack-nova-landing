@@ -11,7 +11,8 @@ export default function HomePage() {
             {/* Header */}
             <header className="px-4 lg:px-6 h-16 flex items-center border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60 sticky top-0 z-50">
                 <Link href="/" className="flex items-center justify-center">
-                    <Code className="h-8 w-8 text-blue-600" />
+                    {/* <Code className="h-8 w-8 text-blue-600" /> */}
+                    <Image src="/imgs/smallLogoPage.png" alt="Hack Nova Logo" width={40} height={40} className="h-8 w-8" />
                     <span className="ml-2 text-xl font-bold text-gray-900">Hack Nova</span>
                 </Link>
                 <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -356,10 +357,20 @@ export default function HomePage() {
                             </div>
                         </div>
                         <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
-                            {["HTML", "CSS", "JavaScript", "React.js", "Node.js", "Next.js", "Firebase", "MySQL", "PostgreSQL"].map((tech) => (
-                                <div key={tech} className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm border">
-                                    <Code className="h-8 w-8 text-blue-600 mb-2" />
-                                    <span className="text-sm font-medium">{tech}</span>
+                            {[
+                                { name: "HTML", icon: "/icons/icons8-html-96.png" },
+                                { name: "CSS", icon: "/icons/icons8-css-96.png" },
+                                { name: "JavaScript", icon: "/icons/icons8-javascript-96.png" },
+                                { name: "React.js", icon: "/icons/reactjs.svg" },
+                                { name: "Node.js", icon: "/icons/icons8-nodejs-96.png" },
+                                { name: "Next.js", icon: "/icons/Next.js.png" },
+                                { name: "Firebase", icon: "/icons/Firebase.png" },
+                                { name: "MySQL", icon: "/icons/MySQL.png" },
+                                { name: "PostgreSQL", icon: "/icons/PostgresSQL.png" },
+                            ].map((tech) => (
+                                <div key={tech.name} className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-sm border hover:shadow-md transition-shadow">
+                                    <Image src={tech.icon} alt={`${tech.name} logo`} width={48} height={48} className="mb-2 object-contain" />
+                                    <span className="text-sm font-medium">{tech.name}</span>
                                 </div>
                             ))}
                         </div>
