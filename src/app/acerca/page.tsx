@@ -149,10 +149,12 @@ export default function AcercaPage() {
                       <Image
                         src={member.image}
                         alt={`Foto de perfil de ${member.name}`}
-                        width={100}
-                        height={100}
+                        width={200}
+                        height={200}
                         className="rounded-full object-cover border-4 border-blue-100"
-                        style={{maxHeight: "146px"}}
+                        //disable height 
+                        style={{height: "200px"}}
+                        
                       />
                     </div>
                     <CardTitle className="text-center text-lg">{member.name}</CardTitle>
