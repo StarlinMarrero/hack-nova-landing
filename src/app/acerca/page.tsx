@@ -15,8 +15,8 @@ export default function AcercaPage() {
     },
     {
       name: "STARLIN MARRERO",
-      role: "Desarrollador Full Stack",
-      description: "Experto en programación y estructura técnica",
+      role: "Senior Software Engineer",
+      description: "Full Stack, Experto en programación y estructura técnica",
       image: "/users/starlin.png" // Add specific image path if available
     },
     {
