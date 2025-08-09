@@ -45,7 +45,7 @@ export default function HomePage() {
                                     <p className="max-w-[600px] text-gray-600 md:text-xl">Acercamos la tecnología a quienes más la necesitan. Diseñamos páginas web personalizadas para emprendedores y pequeños negocios con asesoría continua y acompañamiento humano.</p>
                                 </div>
                                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                                    <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
+                                    <Button size="lg" className="bg-emerald-400 hover:bg-emerald-700" asChild>
                                         <Link href="#planes">
                                             Ver Planes
                                             <ArrowRight className="ml-2 h-4 w-4" />
@@ -222,8 +222,8 @@ export default function HomePage() {
                             </Card>
 
                             {/* Plan Estándar */}
-                            <Card className="relative border-2 border-blue-500 hover:border-blue-600 transition-all hover:shadow-lg">
-                                <Badge className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-blue-500">Más Popular</Badge>
+                            <Card className="relative border-2 border-emerald-500 hover:border-emerald-600 transition-all hover:shadow-lg">
+                                <Badge className="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-emerald-500">Más Popular</Badge>
                                 <CardHeader>
                                     <CardTitle className="text-center">Plan Estándar</CardTitle>
                                     <div className="text-center">
@@ -259,7 +259,7 @@ export default function HomePage() {
                                             <span className="text-sm">Soporte gratuito por 2 meses</span>
                                         </li>
                                     </ul>
-                                    <Button className="w-full bg-blue-600 hover:bg-blue-700" asChild>
+                                    <Button className="w-full bg-emerald-400 hover:bg-emerald-700" asChild>
                                         <Link href="https://wa.me/18297724268?text=Hola, me interesa el Plan Estándar">Elegir Plan</Link>
                                     </Button>
                                 </CardContent>
@@ -367,7 +367,7 @@ export default function HomePage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-600 to-purple-600">
+                <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-r from-blue-400 to-green-400">
                     <div className="px-4 md:px-6">
                         <div className="flex flex-col items-center justify-center space-y-4 text-center text-white">
                             <div className="space-y-2">
@@ -381,7 +381,7 @@ export default function HomePage() {
                                         Contactar por WhatsApp
                                     </Link>
                                 </Button>
-                                <Button size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-blue-600" asChild>
+                                <Button size="lg" variant="outline" className=" border-white hover:bg-white hover:text-blue-600 text-blue-600" asChild>
                                     <Link href="tel:+18297724268">
                                         <Phone className="mr-2 h-5 w-5" />
                                         Llamar Ahora

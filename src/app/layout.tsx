@@ -6,7 +6,6 @@ import "./globals.css";
 export const metadata: Metadata = {
     title: "Hack Nova - Landing Page",
     description: "Landing page for Hack Nova Web Solutions project.",
-    generator: "Next.js",
 };
 
 export default function RootLayout({
