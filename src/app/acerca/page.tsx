@@ -23,7 +23,7 @@ export default function AcercaPage() {
             name: "CHRISTOPHER MENDEZ",
             role: "DevOps",
             description: "Especialista en hosting, dominios y configuración técnica",
-            image: "/users/critopher.jpg", // Add specific image path if available
+            image: "/users/cristopherMendez.jpg", // Add specific image path if available
         },
         {
             name: "FELIZ ISMAEL BELTRAN",
@@ -35,7 +35,7 @@ export default function AcercaPage() {
             name: "ALBERT ONIEL ALVARADO",
             role: "Marketing Digital",
             description: "Especialista en publicidad, redes sociales y promoción online",
-            image: "/placeholder-user.jpg", // Add specific image path if available
+            image: "/users/AL.jpg", // Add specific image path if available
         },
     ];
 
