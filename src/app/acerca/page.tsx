@@ -23,7 +23,7 @@ export default function AcercaPage() {
       name: "CHRISTOPHER MENDEZ",
       role: "DevOps",
       description: "Especialista en hosting, dominios y configuración técnica",
-      image: "/placeholder-user.jpg" // Add specific image path if available
+      image: "/users/critopher.jpg" // Add specific image path if available
     },
     {
       name: "FELIZ ISMAEL BELTRAN",
