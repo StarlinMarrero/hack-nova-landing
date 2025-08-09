@@ -10,27 +10,32 @@ export default function AcercaPage() {
     {
       name: "YULIANNI GARCIA",
       role: "UX/UI y Diseño Gráfico",
-      description: "Especialista en diseño visual y experiencia de usuario"
+      description: "Especialista en diseño visual y experiencia de usuario",
+      image: "/users/yulianny.jpg" // Add specific image path if available
     },
     {
       name: "STARLIN MARRERO",
       role: "Desarrollador Full Stack",
-      description: "Experto en programación y estructura técnica"
+      description: "Experto en programación y estructura técnica",
+      image: "/users/starlin.png" // Add specific image path if available
     },
     {
       name: "CHRISTOPHER MENDEZ",
       role: "DevOps",
-      description: "Especialista en hosting, dominios y configuración técnica"
+      description: "Especialista en hosting, dominios y configuración técnica",
+      image: "/placeholder-user.jpg" // Add specific image path if available
     },
     {
       name: "FELIZ ISMAEL BELTRAN",
       role: "Project Manager",
-      description: "Coordinación general y contacto con clientes"
+      description: "Coordinación general y contacto con clientes",
+      image: "/placeholder-user.jpg" // Add specific image path if available
     },
     {
       name: "ALBERT ONIEL ALVARADO",
       role: "Marketing Digital",
-      description: "Especialista en publicidad, redes sociales y promoción online"
+      description: "Especialista en publicidad, redes sociales y promoción online",
+      image: "/placeholder-user.jpg" // Add specific image path if available
     }
   ]
 
@@ -140,8 +145,15 @@ export default function AcercaPage() {
               {teamMembers.map((member, index) => (
                 <Card key={index} className="h-full border-2 hover:border-blue-200 transition-all hover:shadow-lg">
                   <CardHeader>
-                    <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4">
-                      <Users className="h-8 w-8 text-blue-600" />
+                    <div className="flex items-center justify-center mx-auto mb-4">
+                      <Image
+                        src={member.image}
+                        alt={`Foto de perfil de ${member.name}`}
+                        width={100}
+                        height={100}
+                        className="rounded-full object-cover border-4 border-blue-100"
+                        style={{maxHeight: "146px"}}
+                      />
                     </div>
                     <CardTitle className="text-center text-lg">{member.name}</CardTitle>
                     <CardDescription className="text-center font-semibold text-blue-600">
